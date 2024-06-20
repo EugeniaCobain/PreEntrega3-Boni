@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${item.imagen}" class="imagenCarrito"  alt="${item.nombre}">
                 <div class="info">
                     <span><strong>${item.nombre}</strong></span>
-                    <span><strong>Unit price:</strong> ${item.precio}</span>
+                    <span><strong>Unit price:</strong> $${item.precio}</span>
                     <div class="button-container">
                         <button class="decrementar-cantidad" data-id="${item.id}">-</button>
                         <span class="quantity"><strong>Quantity:</strong> ${item.cantidad}</span>
