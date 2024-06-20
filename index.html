@@ -15,52 +15,57 @@
 </head>
 
 <body>
-    <header id="header">
+    <header id="header_index">
         <!-- Logo -->
         <div class="container__logo">
                 <a href="./index.html"><img src="./assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
         </div>
         <!-- Menú -->
-        <div class="container__menu">
-            <div class="menu">
-                <!-- <input type="checkbox" id="check__menu">
-                <label id="label__check"  for="check__menu">
-                <img src="./assets/imgs/logo/iconohamb.png" class="icon__menu" alt="">
-                </label> -->
-            
-            <nav class="nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html/graves.html">The Graves</a>
-                        <ul class="gra">
-                            <li><a href="./html/graves.html#artists">Artists</a></li>
-                            <li><a href="./html/graves.html#scientists">Scientists</a></li>
-                            <li><a href="./html/graves.html#thinkers" id="login">Thinkers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./html/login.html">Log In</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
-        <!-- Buscador -->
-        <div id="cabecera_buscar">
-                <form action="">
-                    <input type="search" placeholder="Search" id="buscar" class="buscar_input">
-                    <label for="buscar" class="buscar_label"></label>
-                </form>
-        </div>
+        <h2><a class="nav-log" id="nav-login">Log in</a></h2>
     </header>
 
     <main>
-        <div >
-            <!-- Renderizado con JS -->
-            <p id="dom"></p>
+        <!-- Mensajes de resgistro y Log in/out exitoso o no -->
+        <div id="message" class="message">
+            <span id="message-text"></span>
+            <!-- Botón para cerrar el mensaje -->
+            <button id="close-message">Close</button>
+        </div>
+
+        <!-- Log in -->
+        <div id="login-container">
+            <form id="login-form">
+                <h2>Log In</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Type your username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit">Log In</button>
+                <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            </form>
+        </div>
+        
+        <!-- Registro -->
+        <div id="register-container" style="display: none;">
+            <form id="register-form">
+                <h2>Register</h2>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" placeholder="Create your username" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" placeholder="Create password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="show-login">Log in here</a></p>
+            </form>
         </div>
     
     </main>
 
-<script src="./js/index.js"></script>
+    <footer class="footer_index">
+        <img src="./assets/imgs/logo/graveyard.png" alt="">
+    </footer>
+
+<!-- <script src="./js/index.js"></script> -->
+<script src="./js/login.js"></script>
     
 </body>
 </html>

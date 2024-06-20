@@ -17,7 +17,7 @@
     <header id="header">
         <!-- Logo -->
         <div class="container__logo">
-                <a href="../index.html"><img src="../assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
+                <a href="./graves.html"><img src="../assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
         </div>
         <!-- Menú -->
         <div class="container__menu">
@@ -27,8 +27,8 @@
                 <img src="./assets/imgs/logo/iconohamb.png" class="icon__menu" alt="">
                 </label> -->
             
-            <nav class="nav">
-                <ul>
+                <nav class="nav">
+                    <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./graves.html">The Graves</a>
                         <ul class="gra">
@@ -37,34 +37,65 @@
                             <li><a href="./graves.html#thinkers" id="login">Thinkers</a></li>
                         </ul>
                     </li>
-                    <li><a href="./login.html">Log In</a></li>
-                </ul>
-            </nav>
+                    <!-- <li><a href="./login.html">Log In</a></li> -->
+                    </ul>
+                </nav>
+            </div>
         </div>
-        </div>
-        <!-- Buscador -->
+        <!-- Buscador, Log y Cart -->
         <div id="cabecera_buscar">
-                <form action="">
-                    <input type="search" placeholder="Search" id="buscar" class="buscar_input">
-                    <label for="buscar" class="buscar_label"></label>
-                </form>
-        </div>
+            <form action="">
+                <input type="search" placeholder="Search" id="buscar" class="buscar_input">
+                <label for="buscar" class="buscar_label"></label>
+            </form>
+            <button id="abrir-carrito-btn"><img src="../assets/imgs/logo/shopping-cart.png" alt=""></button>
+            <button class="log"><a href="../index.html">Log In</a></button>
+        </div> 
     </header>
 
-
+    <main class="main_graves">
+        <!-- Mensajes de logout -->
+        <div id="message" class="message" style="display: none;">
+            <span id="message-text"></span>
+            <button id="close-message">Close</button>
+        </div>
+    
+        <!-- Cards -->
         <section id="contenedor_graves">
-            <!-- Renderizado con JS -->
-            <section id="artists" class="artists__section">
-                <h2>Artists</h2>
-            </section>
-            <section id="scientists" class="scientists_section">
-                <h2>Scientists</h2>
-            </section>
-            <section id="thinkers" class="thinkers__section">
-                <h2>Thinkers</h2>
+        <!-- Renderizado con JS -->
+        <section id="artists" class="artists__section">
+            <h2>Artists</h2>
+        </section>
+        <section id="scientists" class="scientists__section">
+            <h2>Scientists</h2>
+        </section>
+        <section id="thinkers" class="thinkers__section">
+            <h2>Thinkers</h2>
+        </section>
         </section>
 
+        <!-- Cart -->
+        <div id="carrito" class="carrito">
+            <!-- Botón para cerrat el carrito -->
+            <button id="cerrar-btn" class="cerrar-btn">X</button>
+            <h2>Shopping cart</h2>
+            <div id="mensaje-eliminacion" style="display: none;"></div>
+            <div id="lista-productos" class="lista-productos">
+                <!-- Acá se muestran los productos del carrito. Renderizado con JS -->
+            </div>
+            <div id="total" class="total">
+                Total: $<span id="total-amount">0.00</span>
+            </div>
+            <div class="empty_success" id="compra-exitosa" style="display: none; color: green"><p>Succesful purchase!</p></div>
+            <div class="empty_success" id="carrito-vaciado" style="display: none; color: red"><p>Your cart has been emptied</p></div>
+            <div class="empty_success" id="carrito-vacio" style="display: none; color: red"><p>There is nothing in this cart!</p></div>
+            <button id="comprar-btn" class="comprar-btn">Buy</button>
+            <button id="vaciar-btn" class="vaciar-btn">Empty cart</button>
+        </div>
 
+    </main>
+
+<!-- SCRIPT JS -->
 <script src="../js/graves.js"></script>
 
 </body>
