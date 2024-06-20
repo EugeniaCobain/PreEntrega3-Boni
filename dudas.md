@@ -16,4 +16,6 @@
     
     MUCHAS GRACIAS!!!
 
+
+https://www.freecodecamp.org/espanol/news/metodos-window-de-javascript-explicados-con-ejemplos/
 -->
