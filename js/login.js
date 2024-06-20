@@ -343,7 +343,7 @@ if (loginForm) {
             if (window.location.pathname === "/index.html") {
                 setTimeout(() => {
                     if (currentUser) {
-                        window.location.href = "graves.html";
+                        window.location.href = "/graves.html";
                     }
                 }, 2000); // Redirige a la página de graves después de 2 segundos si se está logueando desde index.html
             }
