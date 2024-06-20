@@ -104,7 +104,7 @@ if (loginForm) {
             if (window.location.pathname === "/index.html") {
                 setTimeout(() => {
                     if (currentUser) {
-                        window.location.href = "./html/graves.html";
+                        window.open('html/graves.html', '_self');
                     }
                 }, 2000); // Redirijo a la página de graves después de 2 segundos si se está logueando desde index.html
             }
