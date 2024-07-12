@@ -126,14 +126,6 @@
     "thinkers": [
         {
             "id": 16,
-            "nombre": "Theodor Adorno",
-            "fecha": "(1903-1969)",
-            "imagen": "../assets/imgs/graves/thinkers/adorno.jpg",
-            "descripcion": "German philosopher, sociologist, and musicologist, renowned for his influential contributions to critical theory. As a key figure in the Frankfurt School, Adorno explored the intersections of culture, society, and aesthetics. His work delved into the impact of mass media and the culture industry on individual autonomy. A prolific writer and accomplished musician, Adorno's interdisciplinary approach continues to shape contemporary debates on the role of art and society.",
-            "precio": 1000
-        },
-        {
-            "id": 17,
             "nombre": "Ludwig Feuerbach",
             "fecha": "(1804-1872)",
             "imagen": "../assets/imgs/graves/thinkers/feuerbach.jpg",
@@ -141,7 +133,7 @@
             "precio": 1050
         },
         {
-            "id": 18,
+            "id": 17,
             "nombre": "Antonio Gramsci",
             "fecha": "(1891–1937)",
             "imagen": "../assets/imgs/graves/thinkers/gramsci.jpg",
@@ -149,7 +141,7 @@
             "precio": 2350
         },
         {
-            "id": 19,
+            "id": 18,
             "nombre": "Georg Wilhelm Friedrich Hegel",
             "fecha": "(1770–1831)",
             "imagen": "../assets/imgs/graves/thinkers/hegel.jpg",
@@ -157,7 +149,7 @@
             "precio": 1000
         },
         {
-            "id": 20,
+            "id": 19,
             "nombre": "Søren Kierkegaard",
             "fecha": "(1813-1855)",
             "imagen": "../assets/imgs/graves/thinkers/kierkegaard.jpg",
@@ -165,7 +157,7 @@
             "precio": 1000
         },
         {
-            "id": 21,
+            "id": 20,
             "nombre": "Gottfried Wilhelm Leibniz",
             "fecha": "(1646-1716)",
             "imagen": "../assets/imgs/graves/thinkers/leibniz.jpg",
@@ -173,7 +165,7 @@
             "precio": 1000
         },
         {
-            "id": 22,
+            "id": 21,
             "nombre": "Arthur Schopenhauer",
             "fecha": "(1788–1860)",
             "imagen": "../assets/imgs/graves/thinkers/schopenhauer.jpg",
@@ -181,13 +173,12 @@
             "precio": 1400
         },
         {
-            "id": 23,
+            "id": 22,
             "nombre": "Max Weber",
             "fecha": "(1864-1920)",
             "imagen": "../assets/imgs/graves/thinkers/weber.jpg",
             "descripcion": "German sociologist, philosopher, and political economist. A key figure in the development of modern sociology, Weber explored the intersection of economics, politics, and culture. Renowned for his concept of the 'Protestant work ethic' and his ideas on bureaucracy, he profoundly influenced social theory. Weber's work laid the groundwork for understanding the complexities of societal structures and the rationalization of modern life. His impact endures in the fields of sociology, political science, and organizational studies.",
             "precio": 2200
         }
-
     ]
 }
