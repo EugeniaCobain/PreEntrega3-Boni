@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the final resting places of visionaries and trailblazers in our curated guide to the graves of scientists, artists, and philosophers. Uncover the legacies etched in stone, exploring the burial places of those who shaped our world. Join us on a unique pilgrimage to celebrate the intellectual, artistic, and scientific contributions that echo through time, as we pay homage to the resting places of these remarkable minds">
     <meta name="keywords" content="graveyard, cemetery photography, cemetery appreciation, gravesites of remarkable individuals, graves of renowned figures, burial places of scientists, writers, philosophers, thinkers, graves, tombs">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="styles" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../headstone.ico" type="image/x-icon">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>The Graves</title>
+    <title>Contact</title>
 </head>
 <body>
     <header id="header">
@@ -40,64 +38,42 @@
                 <li class="li"><a href="./locations.html" class="a">Locations</a></li>
                 <li class="li"><a href="./contact.html" class="a">Contact</a></li>
             </ul>
-            <!-- Buscador, carrito y login -->
-            <div class="nav-extras">
-                <form action="">
-                    <input type="search" placeholder="Search" id="buscar" class="buscar_input">
-                    <label for="buscar" class="buscar_label"></label>
-                </form>
-                <button id="abrir-carrito-btn"><img src="../assets/imgs/logo/shopping-cart.png" alt="Shopping Cart" class="svg"></button>
-                <button class="log"><a href="../index.html">Log In</a></button>
-            </div>
+            <button class="log"><a href="../index.html">Log In</a></button>
         </nav>
     </header>
-
-    <main class="main_graves">
-        <!-- Wrapper -->
-        <section class="wrapGraves">
-            <div class="wrapGraves__imgSobreTexto"><h2>THE GRAVES</h2>
-            </div>
+    
+    <main class="main__contacto">
+        <section class="wrapContacto">
+                <div class="wrapContacto__imgSobreTexto"><h2>CONTACT</h2>
+                </div>
         </section>
 
-        <!-- BOTONES BOOTSTRAP -->
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button-" class="btn btn-personal"><a href="#artists"> Artists</a></button>
-            <button type="button" class="btn btn-personal"><a href="#scientists"> Scientists</a></button>
-            <button type="button" class="btn btn-personal"><a href="#thinkers"> Thinkers</a></button>
-        </div> 
-
-        <!-- Cards -->
-        <section id="contenedor_graves">
-        <!-- Renderizado con JS -->
-            <section id="artists" class="artists__section">
-                <h2>Artists</h2>
-            </section>
-            <section id="scientists" class="scientists__section">
-                <h2>Scientists</h2>
-            </section>
-            <section id="thinkers" class="thinkers__section">
-                <h2>Thinkers</h2>
-            </section>
+        <section class="mail__contacto"><!-- NO USADA -->     <p>
+                    Do you have a picture of a grave you want to share? Are you looking for a specific gravesite and don't know where it is? Is there a special burial place you would like to see that has not been posted yet? <br> Any suggestions, colaborations, questions or whatever you feel like are more than welcome, so drop your message. <br> Please send an <a href="mailto:correo@correo.com">e-mail</a> or fill out the form below. <br> Can't wait to hear from you! 
+                </p>
         </section>
+    
+        <section class="form">
+                <form action="" target="" method="" name="contactForm" id="form_contacto">
+                    <label for="nombre">Name</label>
+                    <input  type="text" name="nombre" id="nombre" required minlength="3">
+                    <span id="nombreError" class="error-message"></span>
 
-        <!-- Carrito -->
-        <div id="carrito" class="carrito">
-            <!-- Botón para cerrat el carrito -->
-            <button id="cerrar-btn" class="cerrar-btn">X</button>
-            <h2>Shopping cart</h2>
-            <div id="mensaje-eliminacion" style="display: none;"></div>
-            <div id="lista-productos" class="lista-productos">
-                <!-- Acá se muestran los productos del carrito. Renderizado con JS -->
-            </div>
-            <div id="total" class="total">
-                Total: $<span id="total-amount">0.00</span>
-            </div>
-            <div class="empty_success" id="compra-exitosa" style="display: none; color: green"><p>Succesful purchase!</p></div>
-            <div class="empty_success" id="carrito-vaciado" style="display: none; color: red"><p>Your cart has been emptied</p></div>
-            <div class="empty_success" id="carrito-vacio" style="display: none; color: red"><p>There is nothing in this cart!</p></div>
-            <button id="comprar-btn" class="btn comprar-btn">Buy</button>
-            <button id="vaciar-btn" class="btn vaciar-btn">Empty cart</button>
-        </div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <span id="emailError" class="error-message"></span>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject">
+                    <span id="subjectError" class="error-message"></span>
+
+                    <label for="message">Your message</label> 
+                    <textarea name="message" id="message" placeholder="Write your message here" maxlength="500"></textarea>
+                    <span id="messageError" class="error-message"></span>
+
+                    <input type="submit" value="Send" class="btn">
+                </form>
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -113,7 +89,7 @@
 
             <div class="footer__contacto">
                 <h5>More information</h5>
-                <p><a href="./contact.html"><i class='bx bx-envelope' ></i>Let's get in touch  </a></p>
+                <p><a href="./html/contacto.html"><i class='bx bx-envelope' ></i>Let's get in touch  </a></p>
             </div>
         </div>
         <div class="footer__disclaimer">
@@ -124,13 +100,7 @@
         </div>
     </footer>
 
-<!-- Script de SWEET ALERT -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- SCRIPT JS -->
-<!-- <script src="../js/graves.js"></script> -->
-<script src="../js/generales.js" defer></script>
-<script src="../js/graves.js"></script>
-
-
+    <!-- SCRIPT JS -->
+    <script src="../js/generales.js" defer></script>
 </body>
 </html>

@@ -1,23 +1,4 @@
-// Elementos del DOM
-const messageBox = document.getElementById('message');
-const messageText = document.getElementById('message-text');
-const closeMessageButton = document.getElementById('close-message');
-
-// Función para mostrar mensajes en pantalla
-function showMessage(message, isSuccess = true) {
-    messageText.textContent = message;
-    messageBox.className = 'message';
-    //Experimento con perador ternario
-    messageBox.classList.add(isSuccess ? 'success' : 'error');
-    messageBox.style.display = 'block';
-}
-
-// Oculto mensajes al hacer clic en el botón "Cerrar"
-closeMessageButton.addEventListener('click', () => {
-    messageBox.style.display = 'none';
-});
-
-// Obtengo usuarios desde localStorage. Si no hay un array de usuarios en el LS, se iniciliza un array vacío
+// Obtengo usuarios desde localStorage. Si no hay un array de usuarios en el LS, se inicializa un array vacío
 let users = JSON.parse(localStorage.getItem('users')) || [];
 
 // Obtengo usuario actual del LS
@@ -32,7 +13,7 @@ const navLogin = document.getElementById('nav-login');
 const showRegister = document.getElementById('show-register');
 const showLogin = document.getElementById('show-login');
 
-// Formulario de de registro
+// Formulario de registro
 if (showRegister) {
     showRegister.addEventListener('click', (e) => {
         e.preventDefault();
@@ -57,29 +38,32 @@ if (registerForm) {
         const newUsername = document.getElementById('new-username').value;
         const newPassword = document.getElementById('new-password').value;
 
-        // Inicializo variable para indicar si el usuario ya existe
-        let userExists = false;
-
-        //Recorro con un FOR el array de usuarios para ver si el usuario ya existe
-        for (let i = 0; i < users.length; i++) {
-            if (users[i].username === newUsername) {
-                userExists = true; 
-                break; 
-            }
-        }
+        // Verificar si el usuario ya existe
+        let userExists = users.some(user => user.username === newUsername);
 
         if (userExists) {
-            //Si el usuario ya existe, mensaje rojo
-            showMessage('Username already exists', false);
+            // Mostrar mensaje de error con SweetAlert si el usuario ya existe
+            Swal.fire({
+                icon: 'error',
+                title: 'Username already exists!',
+                text: 'Pick a new one!',
+            });
         } else {
-             //Si el usuario no existe, lo agrega al array users, lo guardo en el LS y muestro mensaje verde
+            // Agregar usuario al array y guardar en localStorage
             users.push({ username: newUsername, password: newPassword });
             localStorage.setItem('users', JSON.stringify(users));
-            showMessage('Registration successful!', true);
-            //Vacío el form de registro, lo oculto y muestro el de log in
-            registerForm.reset();
-            loginContainer.style.display = 'block';
-            registerContainer.style.display = 'none';
+
+            // Mostrar mensaje de éxito con SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Registration successful!',
+                text: 'You can now login with your new account.',
+            }).then(() => {
+                // Vaciar el formulario, ocultar registro y mostrar login
+                registerForm.reset();
+                loginContainer.style.display = 'block';
+                registerContainer.style.display = 'none';
+            });
         }
     });
 }
@@ -88,34 +72,46 @@ if (registerForm) {
 if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        //Capturo el username y password que ingresa el usuario
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        //Busco usuario existente en el array users y lo guardo en la variable user
+        // Verificar credenciales
         const user = users.find(user => user.username === username && user.password === password);
 
         if (user) {
+            // Iniciar sesión exitosa
             currentUser = user;
             sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
-            showMessage(`Welcome, ${username}`, true);
-            loginForm.reset();
-            updateNav();
-            if (window.location.pathname === "/index.html") {
-                setTimeout(() => {
-                    if (currentUser) {
-                        window.location.href = './html/graves.html';
-                    }
-                }, 2000); // Redirijo a la página "graves" después de 2 segundos
-            }
+
+            // Mostrar mensaje de bienvenida con SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: `Welcome, ${username}!`,
+                showConfirmButton: false,
+                timer: 1500,
+            }).then(() => {
+                loginForm.reset();
+                updateNav();
+                if (window.location.pathname === "/index.html") {
+                    setTimeout(() => {
+                        window.location.href = './html/home.html';
+                    }, 1000); // Redirigir después de 2 segundos
+                }
+            });
         } else {
-            showMessage('Invalid username or password', false);
-            loginForm.reset();
+            // Mostrar mensaje de error con SweetAlert
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Invalid username or password!',
+            }).then(() => {
+                loginForm.reset();
+            });
         }
     });
 }
 
-// Actualizo la navegación después del login
+// Actualizar navegación después del login
 function updateNav() {
     if (currentUser) {
         const username = currentUser.username;
@@ -124,8 +120,16 @@ function updateNav() {
             e.preventDefault();
             currentUser = null;
             sessionStorage.removeItem('currentUser');
-            showMessage(`You have logged out. See you soon, ${username}!`, true); 
-            updateNav();
+
+            // Mostrar mensaje de despedida con SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: `Goodbye, ${username}!`,
+                showConfirmButton: false,
+                timer: 1500,
+            }).then(() => {
+                updateNav();
+            });
         });
     } else {
         navLogin.innerHTML = '<a class="navLog href="#">Log In</a>';
@@ -136,5 +140,7 @@ function updateNav() {
     }
 }
 
-// Llamada a la función updateNav
+// Llamar a la función updateNav
 updateNav();
+
+

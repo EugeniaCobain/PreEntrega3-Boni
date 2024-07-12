@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the final resting places of visionaries and trailblazers in our curated guide to the graves of scientists, artists, and philosophers. Uncover the legacies etched in stone, exploring the burial places of those who shaped our world. Join us on a unique pilgrimage to celebrate the intellectual, artistic, and scientific contributions that echo through time, as we pay homage to the resting places of these remarkable minds">
+    <meta name="keywords" content="graveyard, cemetery photography, cemetery appreciation, gravesites of remarkable individuals, graves of renowned figures, burial places of scientists, writers, philosophers, thinkers, graves, tombs">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../headstone.ico" type="image/x-icon">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Mi hoja de estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header id="header">
+        <!-- Logo -->
+        <div class="container__logo">
+            <a href="./home.html"><img src="../assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <button class="button">
+            <img src="../assets/imgs/logo/iconohamb.png" alt="Open Menu" class="svg abrirhamb">
+            <img src="../assets/imgs/logo/iconohambX.png" alt="Close Menu" class="svg cerrarhamb">
+        </button>
+        <!-- Menú de navegación -->
+        <nav class="nav container__menu">
+            <ul class="nav-links">
+                <li class="li"><a href="./home.html" class="a">Home</a></li>
+                <li class="li submenu-toggle"><a href="./graves.html" class="a">The graves <span class="arrow">&#9660;</span></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="./graves.html#artists">Artists</a></li>
+                        <li class="submenu__item"><a href="./graves.html#scientists">Scientists</a></li>
+                        <li class="submenu__item"><a href="./graves.html#thinkers" id="login">Thinkers</a></li>
+                    </ul>
+                </li>
+                <li class="li"><a href="./locations.html" class="a">Locations</a></li>
+                <li class="li"><a href="./contact.html" class="a">Contact</a></li>
+            </ul>
+            <button class="log"><a href="../index.html">Log In</a></button>
+        </nav>
+    </header>
+    
+    <main class="locations">
+        <section class="location__banner">
+            <div class="wrapLocations">
+                <div class="wrapLocations__imgSobreTexto">
+                    <h2>LOCATIONS</h2>
+                </div>
+            </div>
+
+        <section class="locations__grid">
+              <aside class="aside">
+                <!-- RENDERIZADO CON JS -->
+                <div id="accordion-container" class="accordion"></div>
+              </aside>
+              
+            <!-- Guía de cementerios - NO LLEGUÉ A DINAMIZARLA CON JS PORQUE ME VOLVÍ LOCA CON LOS MAPAS -->
+            <div class="locations__main">
+                <!-- Argentina -->
+                <div class="locations__pais">
+                    <h2>ARGENTINA</h2>
+                    <h3 id="bsas">BUENOS AIRES</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Cementerio de la Chacarita</h4>
+                                <ul>
+                                    <li>Carlos GARDEL</li>
+                                </ul>
+                        </div>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.592747059833!2d-58.4563446!3d-34.5877675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5fcdd2212d3%3A0x80159bd2c0e7d6c8!2sCementerio%20de%20la%20Chacarita!5e0!3m2!1ses-419!2sar!4v1702331828935!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Austria -->
+                <div class="locations__pais">
+                    <h2>AUSTRIA</h2>
+                    <h3 id="viena">VIENNA</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Wiener Zentralfriedhof</h4>
+                                <ul>
+                                    <li>Ludwig van BEETHOVEN</li>
+                                    <li>Ludwig BOLTZMANN</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10648.147315634194!2d16.4416926!3d48.1480952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476daa459ff60ed9%3A0xc415c75b7324f1d9!2sZentralfriedhof!5e0!3m2!1ses-419!2sar!4v1702331633976!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dinamarca -->
+                <div class="locations__pais">
+                    <h2>DENMARK</h2>
+                    <h3 id="copenhagen">COPENHAGEN</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Assistens Cemetery</h4>
+                                <ul>
+                                    <li>Niels BOHR</li>
+                                    <li>Søren KIERKEGAARD</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8995.534685043573!2d12.5501532!3d55.6910102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253ac149dd23b%3A0x68e7d52ac48fdeb!2sAssistens%20Cemetery!5e0!3m2!1ses-419!2sar!4v1702332224533!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Francia -->
+                <div class="locations__pais">
+                    <h2>FRANCE</h2>
+                    <h3 id="paris">PARIS</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Cimetière du Père-Lachaise</h4>
+                                <ul>
+                                    <li>Marcel Proust</li>
+                                </ul>
+                        </div>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.315810334467!2d2.3934725!3d48.861472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d8b5c69a785%3A0xa1cf6127530b6419!2sCementerio%20del%20P%C3%A8re-Lachaise!5e0!3m2!1ses-419!2sar!4v1702384783858!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alemania -->
+                <div class="locations__pais">
+                    <h2>GERMANY</h2>
+
+                    <h3 id="berlin">BERLIN</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Dorotheenstadt Friedhof</h4>
+                                <ul>
+                                    <li>Bertolt BRECHT</li>
+                                    <li>Georg Wilhelm Friedrich HEGEL</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9709.123976592022!2d13.3846804!3d52.52835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851eb8978e493%3A0x2dfcfaef07262f8!2sDorotheenstadt%20cemetery!5e0!3m2!1ses-419!2sar!4v1702384572215!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <h3 id="frankfurt">FRANKFURT</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Hauptfriedhof Frankfurt am Main</h4>
+                                <ul>
+                                    <li>Theodor ADORNO</li>
+                                    <li>Arthur SCHOPENHAUER</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10228.962060967997!2d8.6908947!3d50.1379323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0ec54f73194b%3A0x136520c9e28698bd!2sFrankfurt%20Main%20Cemetery%2C%20Eckenheimer%20Landstra%C3%9Fe%20194%2C%2060320%20Frankfurt%20am%20Main%2C%20Alemania!5e0!3m2!1ses-419!2sar!4v1702332526370!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <h3 id="goettingen">GÖTTINGEN</h3>
+                <div class="locations__ciudad">
+                    <div class="ciudad__titulo"> 
+                        <h4>Stadtfriedhof Göttingen</h4>
+                            <ul>
+                                <li>Carl Friedrich GAUSS</li>
+                                <li>David HILBERT</li>
+                                <li>Max PLANCK</li>
+                                <li>Karl SCHWARZSCHILD</li> 
+                            </ul>
+                    </div>
+                           
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9927.971961727277!2d9.9104403!3d51.5316884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a4d4b2fdade007%3A0x918c0104239f3ce2!2sCementerio%20municipal%20de%20Gotinga!5e0!3m2!1ses-419!2sar!4v1701288147742!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+
+
+                <h3 id="hannover">HANNOVER</h3>
+                <div class="locations__ciudad">
+                    <div class="ciudad__titulo"> 
+                        <h4>
+                            Neustädter Hof- und Stadtkirche St. Johannis</h4>
+                            <ul>
+                                <li>Gottfried Wilhelm LEIBNIZ</li>
+                            </ul>
+                    </div>
+                           
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9743.852376144598!2d9.7283833!3d52.3710892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074bea644b4e5%3A0xb4bd679f21f70c95!2sNeust%C3%A4dter%20Kirche%2C%20Hanover!5e0!3m2!1ses-419!2sar!4v1702332739312!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+
+                    <h3 id="heidelberg">HEIDELBERG</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Bergfriedhof Heidelberg</h4>
+                                <ul>
+                                    <li>Robert BUNDSEN</li>
+                                    <li>Max WEBER</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10386.681819929085!2d8.692325!3d49.3962255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c0e53cc3b423%3A0x80a55aa8ccca9700!2sBergfriedhof!5e0!3m2!1ses-419!2sar!4v1701290530438!5m2!1ses-419!2sar" max-width="300" max-height="300"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <h3 id="nuernberg">NÜRNBERG</h3>
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Johannis Friedhof</h4>
+                                <ul>
+                                    <li>Albrecht DÜRER</li>
+                                    <li>Ludwig FEUERBACH</li>
+                                </ul>
+                        </div>
+                           
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10373.499824576531!2d11.0611876!3d49.4585295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f564dfa9b8b25%3A0xb80f3a68401e9ffb!2sJohannisfriedhof%20Cemetery!5e0!3m2!1ses-419!2sar!4v1701267361059!5m2!1ses-419!2sar" max-width="300" max-height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                            
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo">
+                            <h4>St. Rochusfriedhof</h4>
+                            <ul>
+                                <li>Johann PACHELBEL</li>  
+                            </ul>
+                        </div>
+                                
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.9455323139255!2d11.058470275997982!3d49.44774645905213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f56555e5a76f7%3A0x15e358ef7caf3853!2sSt.%20Rochus%20Cemetery!5e0!3m2!1ses-419!2sar!4v1701287704084!5m2!1ses-419!2sar" max-width="300" max-height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>                
+                    </div>
+                </div>
+                
+                <!-- Italia -->
+                <div class="locations__pais">
+                    <h2>ITALY</h2>
+                    <h3 id="rome">ROME</h3>
+
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Basilica of St. Mary Major</h4>
+                                <ul>
+                                    <li>Gian Lorenzo BERNINI</li>
+                                </ul>
+                        </div>
+                           
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11879.118069158805!2d12.4984084!3d41.8975986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61a4db7d30d7%3A0xf7b354fb8f8c357a!2sSanta%20Maria%20della%20Neve!5e0!3m2!1ses-419!2sar!4v1702512591916!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Santa Maria Sopra Minerva</h4>
+                                <ul>
+                                    <li>Fra ANGELICO</li>
+                                </ul>
+                        </div>
+                           
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11879.045487533169!2d12.4780226!3d41.8979888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604e0c1fe953%3A0x4ec75fd47747b4d4!2sSanta%20Maria%20Sopra%20Minerva!5e0!3m2!1ses-419!2sar!4v1702512372443!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                            
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Campo Cestio</h4>
+                                <ul>
+                                    <li>John KEATS</li>
+                                    <li>Antonio GRAMSCI</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11883.077062146449!2d12.4794911!3d41.8763105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f602c343371a7%3A0x84c78399624f5d9b!2sCementerio%20protestante!5e0!3m2!1ses-419!2sar!4v1701290668477!5m2!1ses-419!2sar" max-width="300" max-height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- España -->
+                <div class="locations__pais">
+                    <h2>SPAIN</h2>
+                    <h3 id="madrid">MADRID</h3>
+                            
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>Gta. de San Antonio de la Florida</h4>
+                                <ul>
+                                    <li>Francisco de GOYA</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.249207898087!2d-3.7287588245165164!3d40.42548035510752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422813aec0b15b%3A0x18847971e25e225e!2sGta.%20de%20San%20Antonio%20de%20la%20Florida%2C%20Moncloa%20-%20Aravaca%2C%2028008%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1702386280009!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo">
+                            <h4>Convento de las Trinitarias Descalzas de San Ildefonso</h4>
+                            <ul>
+                                <li>Miguel de Cervantes</li>  
+                            </ul>
+                        </div>
+                                
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12151.124971909177!2d-3.6976418!3d40.4136967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228821cb2d99d%3A0x528f43e730d69a51!2sConvento%20de%20las%20Trinitarias%20Descalzas%20de%20San%20Ildefonso!5e0!3m2!1ses-419!2sar!4v1702386612165!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>                
+                    </div>
+                </div>
+
+                <!-- Polonia -->
+                <div class="locations__pais">
+                    <h2>POLAND</h2>
+                    <h3 id="frombork">FROMBORK</h3>
+                            
+                    <div class="locations__ciudad">
+                        <div class="ciudad__titulo"> 
+                            <h4>St. John's Cathedral</h4>
+                                <ul>
+                                    <li>Nicolaus Copernicus</li>
+                                </ul>
+                        </div>
+                           
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.992507439037!2d19.678716126313628!3d54.35711339861825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2cce4bbb9135f%3A0xcdc671a14be62fd5!2sCatedral%20de%20Frombork!5e0!3m2!1ses-419!2sar!4v1702385331069!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>  
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__titulo">
+            <div class="footer__logo"> <a href="./home.html"><img src="../assets/imgs/logo/logo footer.png" alt="Acta est fabula"></a></div>   
+        </div>
+        <div class="footer__redes">
+            <div class="redes">
+                <h5>Follow on</h5>
+                <p><a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i>Instagram</a></p>
+            </div>
+
+            <div class="footer__contacto">
+                <h5>More information</h5>
+                <p><a href="./contact.html"><i class='bx bx-envelope' ></i>Let's get in touch  </a></p>
+            </div>
+        </div>
+        <div class="footer__disclaimer">
+            <marquee direction="left" width="80%">All images exhibited on this website, except the ones in the section "<span></span><a href="./graves.html"> The Graves</a>", are property of other authors. Credits to whom it may correspond.</marquee>
+        </div>
+        <div>
+            <small class="footer__copyright">&copy; 2024 Trabajo Final - Javascript - &nbsp <b>Eugenia Boni</b></small>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS -->
+    <script src="../js/generales.js" defer></script>
+    <script src="../js/locations.js"></script>
+    
+</body>
+</html>

@@ -11,7 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Acta est fabula - Home</title>
+    <title>Acta est fabula - Log in</title>
 </head>
 
 <body>
@@ -38,13 +38,6 @@
     </header>
 
     <main>
-        <!-- Mensajes de resgistro y Log in/out exitoso o no -->
-        <div id="message" class="message">
-            <span id="message-text"></span>
-            <!-- Botón para cerrar el mensaje -->
-            <button id="close-message">Close</button>
-        </div>
-
         <!-- Log in -->
         <div id="login-container">
             <form id="login-form">
@@ -53,7 +46,7 @@
                 <input type="text" id="username" placeholder="Type your username" required>
                 <label for="password">Password:</label>
                 <input type="password" id="password" placeholder="Enter your password" required>
-                <button type="submit">Log In</button>
+                <button type="submit" class="btn">Log In</button>
                 <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
             </form>
         </div>
@@ -66,18 +59,20 @@
                 <input type="text" id="new-username" placeholder="Create your username" required>
                 <label for="new-password">Password:</label>
                 <input type="password" id="new-password" placeholder="Create password" required>
-                <button type="submit">Register</button>
+                <button type="submit" class="btn">Register</button>
                 <p>Already have an account? <a href="#" id="show-login">Log in here</a></p>
             </form>
         </div>
-    
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer_index">
-        <img src="./assets/imgs/logo/graveyard.png" alt="">
+        <img src="./assets/imgs/logo/graveyard.png" alt="Logo footer">
     </footer>
 
-<!-- <script src="./js/index.js"></script> -->
+<!-- Script de SWEET ALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- SCRIPT JS -->
 <script src="./js/login.js"></script>
     
 </body>

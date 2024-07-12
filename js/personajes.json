@@ -1,0 +1,193 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "nombre": "Fra Angelico",
+            "fecha": "(c. 1395 – 1455)",
+            "imagen": "../assets/imgs/graves/artists/angelico.jpg",
+            "descripcion": "Born Guido di Pietro, he was an Italian Renaissance painter and Dominican friar. Recognized for his devout religious art, Fra Angelico's work is characterized by its ethereal beauty and spiritual depth. His masterpieces include frescoes in the San Marco Convent in Florence, reflecting a harmonious blend of artistic talent and religious devotion. Canonized as Saint Fra Angelico in 1982, his art remains a testament to the union of faith and artistic excellence during the Italian Renaissance.",
+            "precio": 2500
+        },
+        {
+            "id": 2,
+            "nombre": "Ludwig van Beethoven",
+            "fecha": "(1770–1827)",
+            "imagen": "../assets/imgs/graves/artists/beethoven.png",
+            "descripcion": "German composer and pianist, reshaped the world of classical music with his innovative compositions. Despite losing his hearing, Beethoven continued to create masterpieces like the iconic 'Symphony No. 9' and 'Moonlight Sonata'. His legacy transcends his era, marking him as a pivotal figure in the transition from the Classical to the Romantic period. Beethoven's profound influence on music endures, celebrated for the emotional depth and timeless brilliance of his works.",
+            "precio": 1300
+        },
+        {
+            "id": 3,
+            "nombre": "Gian Lorenzo Bernini",
+            "fecha": "(1598–1680)",
+            "imagen": "../assets/imgs/graves/artists/bernini.jpg",
+            "descripcion": "Italian sculptor, architect, and painter of the Baroque period. Renowned for his dynamic and emotive sculptures, Bernini played a pivotal role in shaping the visual language of Baroque art. Notable works include the breathtaking marble sculptures in Rome's Galleria Borghese and his architectural contributions to St. Peter's Basilica, including the iconic baldachin over the high altar. A virtuoso in fusing emotion with artistic expression, Bernini's legacy endures as a key figure in Baroque art and architecture.",
+            "precio": 1500
+        },
+        {
+            "id": 4,
+            "nombre": "Bertolt Brecht",
+            "fecha": "(1898-1956)",
+            "imagen": "../assets/imgs/graves/artists/brecht.jpg",
+            "descripcion": "German playwright and poet, Bertolt Brecht, born on February 10, 1898, in Augsburg, was a trailblazer in 20th-century theatre. Renowned for his epic theatre style and sharp social critique, Brecht's works, including 'The Threepenny Opera' and 'Mother Courage and Her Children', have left an enduring impact. A visionary artist, his innovative approach to storytelling continues to influence theatre and film globally.",
+            "precio": 2500
+        },
+        {
+            "id": 5,
+            "nombre": "Albrecht Dürer",
+            "fecha": "(1471–1528)",
+            "imagen": "../assets/imgs/graves/artists/duerer.jpg",
+            "descripcion": "German Renaissance artist, printmaker, and theorist, stands as a towering figure in art history. Known for his masterful engravings and paintings, such as 'Knight, Death and the Devil' and 'Melencolia I', Dürer's work exemplifies technical precision and innovation. His studies in Italy profoundly influenced his style, blending Northern European tradition with Italian Renaissance ideas. Beyond his art, Dürer's theoretical writings impacted the development of printmaking. His lasting legacy marks him as a key figure bridging medieval and modern artistic sensibilities.",
+            "precio": 1000
+        },
+        {
+            "id": 6,
+            "nombre": "John Keats",
+            "fecha": "(1795–1821)",
+            "imagen": "../assets/imgs/graves/artists/keats.jpg",
+            "descripcion": "English Romantic poet, left an indelible mark on literature with his exquisite verses and sensitivity to nature. From odes like 'Ode to a Nightingale' to the poignant 'To Autumn', Keats exemplified the Romantic emphasis on emotion, beauty, and imagination. Despite a tragically brief life marked by illness, his works, including 'Endymion' and 'Ode to a Grecian Urn,' continue to captivate readers with their lyrical beauty and profound exploration of the human experience. Keats' enduring legacy solidifies him as a key figure in the Romantic literary movement.",
+            "precio": 1950
+        },
+        {
+            "id": 7,
+            "nombre": "Marcel Proust",
+            "fecha": "(1871–1922)",
+            "imagen": "../assets/imgs/graves/artists/proust.png",
+            "descripcion": "French writer, is best known for his monumental work 'In Search of Lost Time' (À la recherche du temps perdu). A literary pioneer of the 20th century, Proust's exploration of memory, time, and the intricacies of human experience captivated readers. Afflicted by health issues, he devoted the latter part of his life to his magnum opus. Proust's intricate prose, including the famous madeleine episode, profoundly influenced modern literature, earning him a lasting legacy as one of the most significant novelists in literary history.",
+            "precio": 1400
+        },
+        {
+            "id": 8,
+            "nombre": "Johann Strauss II",
+            "fecha": "(1825–1899)",
+            "imagen": "../assets/imgs/graves/artists/strauss.png",
+            "descripcion": "Austrian composer known as the 0Waltz King', enchanted the world with his captivating melodies and lively dance compositions. Famous for timeless works like 'The Blue Danube' and 'Die Fledermaus', Strauss became synonymous with Viennese waltzes. His musical legacy, marked by infectious rhythms and graceful melodies, earned him global acclaim during the 19th century. Strauss's contributions to the world of classical music and the enduring popularity of his compositions have solidified his place as a central figure in the history of Romantic music.",
+            "precio": 1850
+        }
+    ],
+    "scientists": [
+        {
+            "id": 9,
+            "nombre": "Niels Bohr",
+            "fecha": "(1885–1962)",
+            "imagen": "../assets/imgs/graves/scientists/bohr.jpg",
+            "descripcion": "Danish physicist, Nobel laureate, and pioneer of quantum theory. Revolutionized atomic understanding with his quantized energy level model. Received Nobel Prize in Physics (1922). Key contributor to Allied atomic bomb project during WWII. Founded Niels Bohr Institute in Copenhagen. Enduring legacy in 20th-century physics.",
+            "precio": 2800
+        },
+        {
+            "id": 10,
+            "nombre": "Robert Bundsen",
+            "fecha": "(1811-1899)",
+            "imagen": "../assets/imgs/graves/scientists/bundsen.jpg",
+            "descripcion": "German chemist who made technical contributions to chemistry that advanced laboratory processes and led to important discoveries during the 19th century. Perhaps his most important invention was the Bunsen burner, which is still in use and is an essential part of any chemistry laboratory. However, he also made great accomplishments in various other chemistry branches.",
+            "precio": 1050
+        },
+        {
+            "id": 11,
+            "nombre": "Nicolaus Copernicus",
+            "fecha": "(1473-1543)",
+            "imagen": "../assets/imgs/graves/scientists/copernico.jpg",
+            "descripcion": "Polish astronomer, founder of heliocentric model. Propelled Copernican Revolution. Devised theory placing Sun, not Earth, at the center of the universe. Published 'On the Revolutions of the Celestial Spheres' (1543). Ignited paradigm shift in astronomy. Enduring influence on modern cosmology.",
+            "precio": 3000
+        },
+        {
+            "id": 12,
+            "nombre": "Carl Friedrich Gauss",
+            "fecha": "(1777-1855)",
+            "imagen": "../assets/imgs/graves/scientists/gauss.jpg",
+            "descripcion": "German mathematician, astronomer, and physicist. Known as the 'Prince of Mathematicians', Gauss revolutionized the field with groundbreaking contributions to number theory, algebra, and physics. Born on April 30, 1777, in Brunswick, Germany, his genius reshaped the landscape of mathematics, leaving an enduring legacy that continues to inspire scholars worldwide.",
+            "precio": 3800
+        },
+        {
+            "id": 13,
+            "nombre": "David Hilbert",
+            "fecha": "(1862-1943)",
+            "imagen": "../assets/imgs/graves/scientists/hilbert.jpg",
+            "descripcion": "German mathematician renowned for his pivotal role in shaping 20th-century mathematics. As a leading figure in the field, Hilbert made significant contributions to various branches of mathematics, including algebraic number theory, mathematical logic, and geometry. He is particularly famous for formulating 23 unsolved problems in mathematics at the turn of the century, which guided research for many years. Hilbert's profound impact on mathematical theory and education solidifies his legacy as one of the most influential mathematicians in history.",
+            "precio": 3500
+        },
+        {
+            "id": 14,
+            "nombre": "Max Planck",
+            "fecha": "(1858-1947)",
+            "imagen": "../assets/imgs/graves/scientists/planck.jpg",
+            "descripcion": "Pioneering German physicist, best known as the originator of quantum theory. Planck's groundbreaking work on blackbody radiation laid the foundation for a revolutionary concept in physics. In 1900, he introduced the idea that energy is quantized in discrete units, which he called 'quanta'. Planck's quantum theory revolutionized our understanding of the behavior of matter and energy at the atomic and subatomic levels. He was awarded the Nobel Prize in Physics in 1918 for his monumental contributions to theoretical physics.",
+            "precio": 3500
+        },
+        {
+            "id": 15,
+            "nombre": "Karl Schwarzschild",
+            "fecha": "(1873-1916)",
+            "imagen": "../assets/imgs/graves/scientists/schwarzschild.jpg",
+            "descripcion": "German astrophysicist Karl Schwarzschild laid the foundation for our understanding of black holes. Renowned for his work on general relativity, he introduced the concept of the Schwarzschild radius, a critical parameter in defining black holes. His groundbreaking contributions continue to illuminate the mysterious realms of our universe.",
+            "precio": 3500
+        }
+    ],
+    "thinkers": [
+        {
+            "id": 16,
+            "nombre": "Theodor Adorno",
+            "fecha": "(1903-1969)",
+            "imagen": "../assets/imgs/graves/thinkers/adorno.jpg",
+            "descripcion": "German philosopher, sociologist, and musicologist, renowned for his influential contributions to critical theory. As a key figure in the Frankfurt School, Adorno explored the intersections of culture, society, and aesthetics. His work delved into the impact of mass media and the culture industry on individual autonomy. A prolific writer and accomplished musician, Adorno's interdisciplinary approach continues to shape contemporary debates on the role of art and society.",
+            "precio": 1000
+        },
+        {
+            "id": 17,
+            "nombre": "Ludwig Feuerbach",
+            "fecha": "(1804-1872)",
+            "imagen": "../assets/imgs/graves/thinkers/feuerbach.jpg",
+            "descripcion": "German philosopher and anthropologist known for his significant influence on the development of Western thought. A key figure in the Young Hegelians movement, Feuerbach is renowned for his critique of religious and metaphysical concepts, particularly in his seminal work 'The Essence of Christianity'. His ideas laid the groundwork for later philosophical movements, including existentialism and materialism, making him a pivotal figure in the 19th-century intellectual landscape.",
+            "precio": 1050
+        },
+        {
+            "id": 18,
+            "nombre": "Antonio Gramsci",
+            "fecha": "(1891–1937)",
+            "imagen": "../assets/imgs/graves/thinkers/gramsci.jpg",
+            "descripcion": "Italian Marxist philosopher, politician, and founder of the Italian Communist Party. Imprisoned by Mussolini's regime, Gramsci wrote extensively on cultural hegemony and Marxism. His notable work, 'Prison Notebooks', remains influential in sociology and critical theory, shaping discourse on power and ideology.",
+            "precio": 2350
+        },
+        {
+            "id": 19,
+            "nombre": "Georg Wilhelm Friedrich Hegel",
+            "fecha": "(1770–1831)",
+            "imagen": "../assets/imgs/graves/thinkers/hegel.jpg",
+            "descripcion": "German philosopher, pivotal figure in Western philosophy. Known for dialectical method and idealist philosophy. Influential works include 'Phenomenology of Spirit' and 'The Science of Logic'. Developed Hegelian dialectic, impacting political theory and aesthetics. Profound influence on existentialism, Marxism, and contemporary philosophy.",
+            "precio": 1000
+        },
+        {
+            "id": 20,
+            "nombre": "Søren Kierkegaard",
+            "fecha": "(1813-1855)",
+            "imagen": "../assets/imgs/graves/thinkers/kierkegaard.jpg",
+            "descripcion": "Danish philosopher, theologian, and literary pioneer. A forerunner of existentialist thought, he delved into the depths of human experience, challenging societal norms and advocating for a passionate, individualized engagement with life and faith. Notable works include 'Fear and Trembling'. His emphasis on the subjective and the quest for authentic living remains influential in existentialist philosophy.",
+            "precio": 1000
+        },
+        {
+            "id": 21,
+            "nombre": "Gottfried Wilhelm Leibniz",
+            "fecha": "(1646-1716)",
+            "imagen": "../assets/imgs/graves/thinkers/leibniz.jpg",
+            "descripcion": "German polymath, mathematician, and philosopher. A trailblazer in the Age of Enlightenment, Leibniz made significant contributions to calculus independently of Newton. Known for his optimism and the concept of monads, he profoundly influenced diverse fields, from mathematics and physics to philosophy. Leibniz's legacy endures in his philosophical writings and the enduring impact of his ideas on the development of modern science and thought.",
+            "precio": 1000
+        },
+        {
+            "id": 22,
+            "nombre": "Arthur Schopenhauer",
+            "fecha": "(1788–1860)",
+            "imagen": "../assets/imgs/graves/thinkers/schopenhauer.jpg",
+            "descripcion": "German philosopher known for his influential work 'The World as Will and Representation' (1818). His philosophy, characterized by a blend of Eastern and Western thought, focused on the primacy of an irrational, blind force called 'will' as the driving factor behind human desires and suffering. Schopenhauer's ideas, influenced by Eastern philosophies, continue to resonate, shaping discussions on existence and the human condition.",
+            "precio": 1400
+        },
+        {
+            "id": 23,
+            "nombre": "Max Weber",
+            "fecha": "(1864-1920)",
+            "imagen": "../assets/imgs/graves/thinkers/weber.jpg",
+            "descripcion": "German sociologist, philosopher, and political economist. A key figure in the development of modern sociology, Weber explored the intersection of economics, politics, and culture. Renowned for his concept of the 'Protestant work ethic' and his ideas on bureaucracy, he profoundly influenced social theory. Weber's work laid the groundwork for understanding the complexities of societal structures and the rationalization of modern life. His impact endures in the fields of sociology, political science, and organizational studies.",
+            "precio": 2200
+        }
+
+    ]
+}
