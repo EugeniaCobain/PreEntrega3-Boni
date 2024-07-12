@@ -55,17 +55,24 @@
     
         <section class="form">
                 <form action="" target="" method="" name="contactForm" id="form_contacto">
+                    
                     <label for="nombre">Name</label>
-                    <input  type="text" name="nombre" id="nombre" required minlength="3">
-
+                    <input  type="text" name="name" id="nombre" required minlength="3">
+                    <span class="form-error"></span>
+                    
+                    
+                    
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required minlength="3">
+                    <span class="form-error"></span>
 
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject">
+                    <input type="text" name="subject" id="subject" required>
+                    <span class="form-error"></span>
 
                     <label for="message">Your message</label> 
-                    <textarea name="message" id="message" placeholder="Write your message here" maxlength="500"></textarea>
+                    <textarea name="message" id="message" placeholder="Write your message here" maxlength="500" required></textarea>
+                    <span class="form-error"></span>
 
                     <input type="submit" value="Send" class="btn">
                 </form>
@@ -96,7 +103,10 @@
         </div>
     </footer>
     
+    <!-- Script de SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- SCRIPT JS -->
     <script src="../js/generales.js" defer></script>
+    <script src="../js/validacionForms.js" type="module"></script>
 </body>
 </html>
