@@ -1,9 +1,8 @@
 /* CREACIÓN DE LAS TARJETAS DESDE MI ARCHIVO TIPO API PERSONAJES.JSON */
 async function cargarPersonajesDesdeJSON() {
     try {
-        const response = await fetch('/js/personajes.json');
+        const response = await fetch('./js/personajes.json');
         const data = await response.json();
-        console.log("Datos cargados desde JSON:", data); // Verificación de datos cargados
         generarCards(data.artists, 'artists');
         generarCards(data.scientists, 'scientists');
         generarCards(data.thinkers, 'thinkers');
@@ -71,9 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mensajeEliminacion = document.getElementById('mensaje-eliminacion');
 
     // Mostrar carrito
-    /* abrirCarritoBtn.addEventListener('click', () => {
-        carrito.classList.add('show');
-    }); */
     abrirCarritoBtn.addEventListener('click', () => {
         carrito.classList.toggle('show');
     });
@@ -85,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para agregar un producto al carrito
     function agregarProductoAlCarrito(producto) {
-        console.log("Agregando producto al carrito:", producto); // Verificación de la llamada
         const listaProductos = JSON.parse(localStorage.getItem('carrito')) || [];
         const productoExistente = listaProductos.find(item => item.id === producto.id);
         if (productoExistente) {
@@ -215,17 +210,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const nombre = button.dataset.nombre;
             const imagen = button.dataset.imagen;
             const precio = button.dataset.precio;
-
-            console.log("Botón de compra clickeado, ID:", id); // Verificación del evento click
-
             const producto = {
                 id: id,
                 nombre: nombre,
                 imagen: imagen,
                 precio: parseFloat(precio)
             };
-
-            console.log("Producto encontrado:", producto); // Verificación del producto encontrado
             agregarProductoAlCarrito(producto);
         }
     });

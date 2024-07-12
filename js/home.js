@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentUser) {
         const username = currentUser.username;
-        // Reemplazar el enlace "Log In" con "Log Out"
+        // Reemplazo el enlace "Log In" con "Log Out"
         navLinks.forEach(link => {
             if (link.textContent === 'Log In') {
                 link.textContent = 'Log Out';
-                // Agregar evento de clic para cerrar sesión con SweetAlert
+                // Agrego evento de clic para cerrar sesión con SweetAlert
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    // Eliminar información de inicio de sesión del sessionStorage
+                    // Elimino información de inicio de sesión del sessionStorage
                     sessionStorage.removeItem('currentUser');
-                    // Mostrar mensaje de deslogueo con SweetAlert
+                    // Muestro mensaje de deslogueo con SweetAlert
                     Swal.fire({
                         icon: 'success',
                         title: `See you soon, ${username}!`,
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         showConfirmButton: false,
                         timer: 1500,
                     }).then(() => {
-                        // Redirigir al usuario a la página de inicio de sesión en 2 segundos
+                        // Redirijo al usuario a la página de inicio de sesión en 2 segundos
                         window.location.href = "../index.html";
                     });
                 });
@@ -31,43 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
-/* const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
-
-// Cuando CLICK en punto
-    // Saber la posición de ese punto
-    // Aplicar un transform translateX al grande
-    // QUITAR la clase activo de TODOS puntos
-    // AÑADIR la clase activo al punto que hemos hecho CLICK
-
-// Recorrer TODOS los punto
-punto.forEach( ( cadaPunto , i )=> {
-    // Asignamos un CLICK a cadaPunto
-    punto[i].addEventListener('click',()=>{
-
-        // Guardar la posición de ese PUNTO
-        let posicion  = i
-        // Calculando el espacio que debe DESPLAZARSE el GRANDE
-        let operacion = posicion * -25
-
-        // MOVEMOS el grand
-        grande.style.transform = `translateX(${ operacion }%)`
-
-        // Recorremos TODOS los punto
-        punto.forEach( ( cadaPunto , i )=>{
-            // Quitamos la clase ACTIVO a TODOS los punto
-            punto[i].classList.remove('activo')
-        })
-        // Añadir la clase activo en el punto que hemos hecho CLICK
-        punto[i].classList.add('activo')
-
-    })
-})
- */
-
-
+/* SLIDER */
 const grande = document.querySelector('.grande');
 const flechaIzquierda = document.querySelector('.flecha.izquierda');
 const flechaDerecha = document.querySelector('.flecha.derecha');
@@ -85,14 +49,14 @@ flechaIzquierda.addEventListener('click', () => {
     if (posicionActual > 0) {
         posicionActual--;
     } else {
-        posicionActual = 3; // Aquí 3 es el número de imágenes menos uno
+        posicionActual = 3;
     }
     moverSlider(posicionActual);
 });
 
 // Evento click en flecha derecha
 flechaDerecha.addEventListener('click', () => {
-    if (posicionActual < 3) { // Aquí 3 es el número de imágenes menos uno
+    if (posicionActual < 3) { 
         posicionActual++;
     } else {
         posicionActual = 0;
@@ -100,42 +64,7 @@ flechaDerecha.addEventListener('click', () => {
     moverSlider(posicionActual);
 });
 
-
-/* const imagenes = document.querySelectorAll(".distorsionable");
-
-imagenes.forEach(imagen => {
-    imagen.addEventListener('mouseover', () => {
-        if (imagen.alt === "The Kiss of death") {
-            imagen.style.transform = 'translateX(20px)'; // Mueve a la derecha
-        } else if (imagen.alt === "Kant's grave") {
-            imagen.style.transform = 'translateX(-20px)'; // Mueve a la izquierda
-        }
-    });
-
-    imagen.addEventListener('mouseout', () => {
-        imagen.style.transform = 'none'; // Restablece la posición original
-    });
-}); */
-/* const imagenes = document.querySelectorAll(".distorsionable");
-
-imagenes.forEach(imagen => {
-    imagen.addEventListener('mouseover', () => {
-        if (imagen.alt === "The Kiss of death") {
-            imagen.style.transform = 'scale(1.1) rotate(5deg)'; // Aumenta de tamaño y rota
-            imagen.style.filter = 'blur(2px)';
-        } else if (imagen.alt === "Kant's grave") {
-            imagen.style.transform = 'scale(1.1) rotate(-5deg)'; // Aumenta de tamaño y rota en sentido contrario
-            imagen.style.filter = 'grayscale(100%)';
-        }
-    });
-
-    imagen.addEventListener('mouseout', () => {
-        imagen.style.transform = 'none'; // Restablece la posición original
-        imagen.style.filter = 'none';    // Restablece el filtro original
-    });
-});
- */
-
+/* ANIMACIÓN DE IMÁGENES */
 const imagenes = document.querySelectorAll(".distorsionable");
 
 imagenes.forEach(imagen => {
