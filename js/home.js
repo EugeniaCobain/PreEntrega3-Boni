@@ -39,7 +39,7 @@ let posicionActual = 0;
 
 // Función para mover el slider a una posición específica
 function moverSlider(posicion) {
-    const anchoImagen = grande.clientWidth / 4; // Aquí 4 es el número de imágenes
+    const anchoImagen = grande.clientWidth / 4;
     const desplazamiento = posicion * -anchoImagen;
     grande.style.transform = `translateX(${desplazamiento}px)`;
 }

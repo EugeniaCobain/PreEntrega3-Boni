@@ -74,15 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
         arrow.addEventListener('click', (event) => {
             event.preventDefault();
 
-            const submenu = arrow.nextElementSibling; // Selecciona el submenu siguiente al arrow
+            const submenu = arrow.nextElementSibling;
 
             arrow.classList.toggle('active');
 
             if (arrow.classList.contains('active')) {
-                arrow.textContent = '▲'; // Flecha hacia abajo
+                arrow.textContent = '▲'; 
                 submenu.style.display = 'block';
             } else {
-                arrow.textContent = '▼'; // Flecha hacia arriba
+                arrow.textContent = '▼'; 
                 submenu.style.display = 'none';
             }
         });

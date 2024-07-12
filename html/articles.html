@@ -17,7 +17,7 @@
     <header id="header">
         <!-- Logo -->
         <div class="container__logo">
-            <a href="./home.html"><img src="../assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
+            <a href="../index.html"><img src="../assets/imgs/logo/logo header.png" alt="Acta est fabula" title="Acta est fabula"></a>
         </div>
         <!-- Menú hamburguesa -->
         <button class="button">
@@ -54,18 +54,22 @@
         </section>
     
         <section class="form">
-                <form action="" target="" method="" name="contactForm" id="form_contacto">
+                <form action="" target="" method="" name="contactForm">
                     <label for="nombre">Name</label>
                     <input  type="text" name="nombre" id="nombre" required minlength="3">
+                    <span id="nombreError" class="error-message"></span>
 
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" required>
+                    <span id="emailError" class="error-message"></span>
 
                     <label for="subject">Subject</label>
                     <input type="text" name="subject" id="subject">
+                    <span id="subjectError" class="error-message"></span>
 
                     <label for="message">Your message</label> 
                     <textarea name="message" id="message" placeholder="Write your message here" maxlength="500"></textarea>
+                    <span id="messageError" class="error-message"></span>
 
                     <input type="submit" value="Send" class="btn">
                 </form>
@@ -85,17 +89,17 @@
 
             <div class="footer__contacto">
                 <h5>More information</h5>
-                <p><a href="./contact.html"><i class='bx bx-envelope' ></i>Let's get in touch  </a></p>
+                <p><a href="./html/contacto.html"><i class='bx bx-envelope' ></i>Let's get in touch  </a></p>
             </div>
         </div>
         <div class="footer__disclaimer">
             <marquee direction="left" width="80%">All images exhibited on this website, except the ones in the section "<span></span><a href="./graves.html"> The Graves</a>", are property of other authors. Credits to whom it may correspond.</marquee>
         </div>
         <div>
-            <small class="footer__copyright">&copy; 2024 Trabajo Final - Comisión 57705 - Javascript - &nbsp <b>Eugenia Boni</b></small>
+            <small class="footer__copyright">&copy; 2024 Trabajo Final - Javascript - &nbsp <b>Eugenia Boni</b></small>
         </div>
     </footer>
-    
+
     <!-- SCRIPT JS -->
     <script src="../js/generales.js" defer></script>
 </body>
