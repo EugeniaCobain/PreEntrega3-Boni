@@ -1,7 +1,10 @@
 /* CREACIÓN DE LAS TARJETAS DESDE MI ARCHIVO TIPO API PERSONAJES.JSON */
 async function cargarPersonajesDesdeJSON() {
     try {
-        const response = await fetch('./js/personajes.json');
+        const response = await fetch('../js/personajes.json'); // Ajusta la ruta según la ubicación del HTML y JSON
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
         const data = await response.json();
         generarCards(data.artists, 'artists');
         generarCards(data.scientists, 'scientists');
